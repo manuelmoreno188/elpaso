@@ -1,0 +1,172 @@
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background-image: url(steak1.jpeg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(130, 98, 78, .3);
+    width: 100%;
+    height: 160px;
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 11;
+}
+
+.logo {
+    justify-self: center;
+}
+
+.contact {
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    justify-self: right;
+    text-decoration: none;
+    background-color: white;
+}
+
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    background: white;
+    color: #51321B;
+    font-size: 1.5em;
+    z-index: 9;
+    border: 2px solid black;
+    box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
+    -webkit-box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero-heading {
+    font-size: 70px;
+    margin-top: 24px;
+    color: #fff;
+}
+
+.hero-description {
+    margin-bottom: 24px;
+    font-size: 35px;
+    color: white;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: unset;
+    font-style: italic;
+}
+
+@media screen and (max-height: 1366px) {
+    body {
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+    }
+
+    .hero {
+        align-self: start;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero {
+        align-self: start;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+    }
+
+    .logo {
+        transform: translateX(0);
+    }
+
+    .logo>img {
+        width: 100px;
+    }
+
+    .contact {
+        padding: 10px;
+        font-size: .8em;
+        justify-self: center;
+    }
+
+    header {
+        background-color: rgba(130, 98, 78, .3);
+        width: 100%;
+        height: 200px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        z-index: 11;
+    }
+}
+
+.main-btn {
+    font-size: 1.4rem;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-decoration: none;
+}
+
+
+.main-btn:hover {
+    color: #fff;
+}
+
+.main-btn:hover:after {
+    width: 100%;
+}
