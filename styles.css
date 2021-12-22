@@ -17,6 +17,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-color: rgba(130, 98, 78, 1);
 }
 
 header {
@@ -36,24 +37,42 @@ header {
 
 .contact {
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 10px;
     justify-self: right;
     text-decoration: none;
-    background-color: white;
+    background: #D8CFC9;
 }
 
-#btn {
+.contact:hover {
+    background-color: #C1B7AF;
+}
+
+.main-btn:hover {
+    background-color: #696562;
+}
+
+.hero a:hover {
+    color: white;
+}
+
+.main-btn {
+    font-size: 1.4rem;
+    background: #D8CFC9;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 2;
+    color: black;
     text-decoration: none;
-    padding: 8px 30px;
-    background: white;
-    color: #51321B;
-    font-size: 1.5em;
-    z-index: 9;
-    border: 2px solid black;
-    box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
-    -webkit-box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
-    -moz-box-shadow: 7px 6px 0px -2px rgba(0,0,0,1);
 }
 
 .hero-container {
@@ -96,7 +115,20 @@ header {
         align-self: start;
     }
 
+    .contact:hover {
+        background-color: #C1B7AF;
+    }
+
+    .main-btn:hover {
+        background-color: #696562;
+    }
+
+    .hero a:hover {
+        color: white;
+    }
+
 }
+
 
 @media screen and (max-width: 767px) {
     body {
@@ -120,7 +152,7 @@ header {
         transform: translateX(0);
     }
 
-    .logo>img {
+    .logo > img {
         width: 100px;
     }
 
@@ -131,7 +163,7 @@ header {
     }
 
     header {
-        background-color: rgba(130, 98, 78, .3);
+        background-color: rgba(255, 54, 0, .2);
         width: 100%;
         height: 200px;
         display: grid;
@@ -140,33 +172,16 @@ header {
         align-items: center;
         z-index: 11;
     }
-}
 
-.main-btn {
-    font-size: 1.4rem;
-    background: white;
-    padding: 10px 20px 10px 20px;
-    border: 2px solid black;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-}
+    .contact:hover {
+        background-color: #C1B7AF;
+    }
 
-.main-btn a {
-    position: relative;
-    z-index: 2;
-    color: black;
-    text-decoration: none;
-}
+    .main-btn:hover {
+        background-color: #696562;
+    }
 
-
-.main-btn:hover {
-    color: #fff;
-}
-
-.main-btn:hover:after {
-    width: 100%;
+    .hero a:hover {
+        color: white;
+    }
 }
