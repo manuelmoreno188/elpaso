@@ -184,3 +184,8 @@ header {
         color: white;
     }
 }
+
+.facebook {
+    text-decoration: none;
+    color: #6486cc;
+}
